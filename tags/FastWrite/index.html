@@ -282,19 +282,10 @@
             <div class="tag-chips">
                 
                 
-                <a href="/tags/Daily/" title="Daily: 3">
+                <a href="/tags/DEM/" title="DEM: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="Daily" style="background-color: #F9EBEA;">Daily
-                        <span class="tag-length">3</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/summary/" title="summary: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="summary" style="background-color: #F5EEF8;">summary
+                            data-tagname="DEM" style="background-color: #F9EBEA;">DEM
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -303,16 +294,25 @@
                 <a href="/tags/FastWrite/" title="FastWrite: 4">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
-                            data-tagname="FastWrite" style="background-color: #D5F5E3;">FastWrite
+                            data-tagname="FastWrite" style="background-color: #F5EEF8;">FastWrite
                         <span class="tag-length">4</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/DEM/" title="DEM: 1">
+                <a href="/tags/Daily/" title="Daily: 3">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="DEM" style="background-color: #E8F8F5;">DEM
+                            data-tagname="Daily" style="background-color: #D5F5E3;">Daily
+                        <span class="tag-length">3</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/summary/" title="summary: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="summary" style="background-color: #E8F8F5;">summary
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -328,7 +328,7 @@
         <div class="row tags-posts">
             
             
-            <div class="article tag-post col s12 m6 l4" data-tags="Daily, summary, FastWrite" data-aos="fade-up">
+            <div class="article tag-post col s12 m6 l4" data-tags="FastWrite, Daily, summary" data-aos="fade-up">
                 <div class="card">
                     <a href="/2022/01/02/4th-blog/">
                         <div class="card-image tag-image">
@@ -359,7 +359,7 @@
             </div>
             
             
-            <div class="article tag-post col s12 m6 l4" data-tags="FastWrite, DEM" data-aos="fade-up">
+            <div class="article tag-post col s12 m6 l4" data-tags="DEM, FastWrite" data-aos="fade-up">
                 <div class="card">
                     <a href="/2021/12/25/3rd-blog/">
                         <div class="card-image tag-image">
@@ -390,7 +390,7 @@
             </div>
             
             
-            <div class="article tag-post col s12 m6 l4" data-tags="Daily, FastWrite" data-aos="fade-up">
+            <div class="article tag-post col s12 m6 l4" data-tags="FastWrite, Daily" data-aos="fade-up">
                 <div class="card">
                     <a href="/2021/12/22/second-blog/">
                         <div class="card-image tag-image">
@@ -421,7 +421,7 @@
             </div>
             
             
-            <div class="article tag-post col s12 m6 l4" data-tags="Daily, FastWrite" data-aos="fade-up">
+            <div class="article tag-post col s12 m6 l4" data-tags="FastWrite, Daily" data-aos="fade-up">
                 <div class="card">
                     <a href="/2021/12/19/first-blog/">
                         <div class="card-image tag-image">
@@ -459,6 +459,60 @@
 
 
     <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="5276811075"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
     
 
     <div class="container row center-align"
