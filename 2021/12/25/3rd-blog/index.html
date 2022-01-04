@@ -368,12 +368,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/DEM/">
-                                <span class="chip bg-color">DEM</span>
-                            </a>
-                        
                             <a href="/tags/FastWrite/">
                                 <span class="chip bg-color">FastWrite</span>
+                            </a>
+                        
+                            <a href="/tags/DEM/">
+                                <span class="chip bg-color">DEM</span>
                             </a>
                         
                     </div>
@@ -411,14 +411,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    2.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    8 分
                 </div>
                 
 
@@ -457,10 +457,13 @@
 <blockquote>
 <p>离散元粘结模型的发展及不足</p>
 </blockquote>
-<p>颗粒离散元方法(DEM)最早有Cundall于1979年正式提出，随后该模拟方法在模拟颗粒物质方面得到了大量应用。而随着2004年…… and Cundall正式论述提出了基于弹簧的平行粘结模型，DEM在岩石模拟领域的相关论文迅增长。根据颗粒间Bond的作用力计算方式的不同，可以将颗粒粘结模型划分为两类：一类基于spring的模型，一类是基于beam的模型。</p>
+<p>颗粒离散元方法(DEM)最早由Cundall于1979年正式提出，随后该模拟方法在模拟颗粒物质方面得到了大量应用。而随着2004年…… and Cundall正式论述提出了基于弹簧的平行粘结模型，DEM在岩石模拟领域的相关论文迅增长。根据颗粒间Bond的作用力计算方式的不同，可以将颗粒粘结模型划分为两类：一类是基于beam的模型，一类基于spring的模型。基于beam的颗粒粘结模型数量相对少于基于spring的DEM颗粒粘结模型。根据所应用的beam理论的不同，主要有以下三类模型在文献中被发展了: Elastic Beam Bond Model，Euler-Bernoulli Beam Bond Model and Timoshenko Beam Bond Model。相对于基于spring的模型，这类模型多考虑了颗粒间扭矩的作用（待确认），但其颗粒间的bond键在力学行为上仍表现为弹脆性破坏。谈到基于spring的DEM颗粒粘结模型，不得不提的是由Itasca公司开发的在岩土领域应用广泛的商业软件Particle flow code (PFC)。基于这款软件的基本架构，最先被开发的模型是Contact Bonded particle Model 和 Parallel Bonded particle Model, 后者成为了岩石模拟领域近二十年来最流行的模型，相关文章被引用超过2000次。最早被提出的PBM具有四个不足：(1) 内摩擦角偏低；（2）模拟得到的岩石单轴抗压和抗拉强度比(UCS/TS)偏低；（3）应力-应变曲线为线性；（4）不同围压下的岩石弹性模量一致。造成不足（1）（2）的主要原因被认为是球形颗粒不能提供足够的颗粒互锁作用和颗粒间及bond结构所产生的转动阻力没有得到恰当的计算，因此刚性簇Clump (Potyondy and Cundall, 2004) 和柔性簇Cluster (Cho et al. 2007) 模型被提出，可以有效提高内摩擦角（待查证），但是当根据实际颗粒尺寸设置簇大小时，在3D模拟中只能轻微地提高压拉比 (Ding and Zhang, 2011) ；Grain-based model (Potyondy, 2010) 也被提出用来解决这一问题，但是其复杂的结构造成计算效率的降低，多适用于小尺寸的精确模拟；Schöpfer et al. (2009) 和 Ding and Zhang (2011) 认为这与没有考虑已经存在的裂缝相关，于是提出了在经典BPM中释放Bond键的构想，结果表明这对压拉比和内摩擦角都有一定影响，Potyondy (2011) 和Ding and Zhang (2014) 对强度计算中转动力矩的计算部分添加了动量作用系数β。通过把力矩作用系数降低到很小的值（Potyondy 设置为0，Ding设置为0.1），研究者得到了与Lac du Bonnet一致的压拉比；随后，Flat-joint model也被提出用来解决这一问题。通过虑bond键的局部破坏，它提供了一个较为完美的解决方案，但过于注重细节的模型计算造成其计算效率降低。造成不足（3）（4）的原因主要是其在PBM模型和颗粒间模型中使用了线弹性模型来计算，使用更接近真实的非线性模型可以改善不足（3）且轻微地改善不足（4），例如EDEM中发展的Hertz-Mindlin with Bonding Model。</p>
+<p>除了以上提及的PBM及其不足的改进，也有其他一些优质的颗粒粘结模型被发展了。在Progressive Failure Model (for strong rock)，（add 特性）。Jiang（2016）发展了可以考虑bond thickness的两种BPM (PFC / DS2D) 。在开源软件YADE中，Luc (2013, 2018)开发了同时适合于soft and hard rock模拟的Bonding Model，Aigerim (2019)基于JKR模型发展了适用于loose sand模拟的Bond Model。For modelling the behavior of soft and hard cohesive materials，local constitutive bonding model was developed by Eugenio in 2015。Based on the definition of a non local constitutive model at each particle contact，a non-local bonding model was developed by M.A. Celigueta (2020) using the stress tensor at the bonds。By defining the ratio between the unloading and loading contact stiffness in the normal component, a displacement-softening bond Model based on PFC (2D/3D) was developed by Ma (2018). 这个模型可以(……添加评价)，但是（……添加不足）。To characterize the failure mechanisms of cement bond, a Cohesive Damage-Plasticity Model based on plasticity theory was developed by Nhu (2017),which can produce realistic modelling of soft rock failure.</p>
+<p>以上所提到的模型中，部分已经可以解决传统PBM模型的不足，但是（……add 不足）</p>
 <blockquote>
 <p>论文的整体架构介绍</p>
 </blockquote>
+<p>本文提出了一种可以考虑颗粒间bond键渐进破坏的新型颗粒粘结模型，在PBM的基础上。</p>
 <hr>
 <p>（15分钟速记练习）</p>
 <hr>
@@ -534,12 +537,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/DEM/">
-                                    <span class="chip bg-color">DEM</span>
-                                </a>
-                            
                                 <a href="/tags/FastWrite/">
                                     <span class="chip bg-color">FastWrite</span>
+                                </a>
+                            
+                                <a href="/tags/DEM/">
+                                    <span class="chip bg-color">DEM</span>
                                 </a>
                             
                         </div>
@@ -748,16 +751,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/FastWrite/">
-                        <span class="chip bg-color">FastWrite</span>
-                    </a>
-                    
                     <a href="/tags/Daily/">
                         <span class="chip bg-color">Daily</span>
                     </a>
                     
                     <a href="/tags/summary/">
                         <span class="chip bg-color">summary</span>
+                    </a>
+                    
+                    <a href="/tags/FastWrite/">
+                        <span class="chip bg-color">FastWrite</span>
                     </a>
                     
                 </div>
@@ -804,12 +807,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/FastWrite/">
-                        <span class="chip bg-color">FastWrite</span>
-                    </a>
-                    
                     <a href="/tags/Daily/">
                         <span class="chip bg-color">Daily</span>
+                    </a>
+                    
+                    <a href="/tags/FastWrite/">
+                        <span class="chip bg-color">FastWrite</span>
                     </a>
                     
                 </div>
@@ -1050,7 +1053,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">4.4k</span>
+                        class="white-color">5.4k</span>
             
             
             

@@ -20,11 +20,11 @@
       
         <tags>
             
-            <tag> FastWrite </tag>
-            
             <tag> Daily </tag>
             
             <tag> summary </tag>
+            
+            <tag> FastWrite </tag>
             
         </tags>
       
@@ -37,7 +37,7 @@
       <link href="/2021/12/25/3rd-blog/"/>
       <url>/2021/12/25/3rd-blog/</url>
       
-        <content type="html"><![CDATA[<h1 id="学术：离散元颗粒粘结模型研究背景"><a href="#学术：离散元颗粒粘结模型研究背景" class="headerlink" title="学术：离散元颗粒粘结模型研究背景"></a>学术：离散元颗粒粘结模型研究背景</h1><blockquote><p>“生活，在任何地方都要不惜代价地参与生活。”————赫拉巴尔</p></blockquote><p>&emsp;&emsp;不知道为什么我会想到这么一句“懒驴上磨屎尿多”，不甚雅观，尤其是用来形容自己，着实有些不妥。不过这句话确实很能贴切地描述我每次准备写论文时的状态，刷手机聚精会神，写代码聚精会神，唯独就是写论文，刚准备开始写，就会想：是不是坐久了，该起来活动活动了……是不是该去上个厕所了……现在几点了，是不是该准备晚饭了……  反正就是一开始干这个事情，就有好多奇奇怪怪的想法阻止我去写论文。Why??? 我也不知道，难道我是在潜意识里排斥写论文吗？有可能是。但我确确实实不排斥写文字，甚至还是喜欢写一些东西的，那难道是我对写论文的认知不正确，把一个很有意思的事情当作了无聊的任务？还是因为知道这是当前最重要的事情，反而却不愿意去做呢？（因为我就经常在重要的考试前不想去复习，比如英语四六级，Deadline越近越不想）人的潜意识真的有点复杂，我自己都有点搞不懂自己的潜意识了。</p><p>&emsp;&emsp;书归正传，这篇博文是我的一个尝试，尝试把论文的一部分拿出来当作一篇博文来写，看看会不会有什么效果，比如：写得快速且愉快。文献引用在下文中全部省略，整体写作思路分为三个部分：</p><ul><li>砂岩的模拟方法，引出离散元粘结模型</li><li>离散元粘结模型的发展及不足</li><li>论文的整体架构介绍</li></ul><hr><blockquote><p>砂岩的模拟方法，引出离散元粘结模型</p></blockquote><p>作为沉积岩的一种，砂岩在自然界中广泛分布，与众多地下空间建设及工业生产过程（隧道建设、sand production等）息息相关。在地下工程建设和生产过程中，由于外力扰动，造成岩石原始赋存应力状态改变，导致砂岩发生大变形、劈裂、破碎以及岩层运动等宏观力学行为，部分力学行为会对工程的安全建设和高效经济的生产造成负面影响。科学准确地认识和模拟砂岩的性质，对提高工业生产的效率意义重大。</p><p>为了提高对砂岩的认识，研究者已经针对砂岩在现场试验、室内试验和理论解析方面开展了一系列研究，为后续的研究奠定了坚实的基础。随着计算机硬件和数值算法的发展，具有可重复性高、可控性强和成本低等优势的数值模拟成为了研究砂岩力学行为的一种重要方法。根据基本原理的不同，砂岩的数值模拟方法可以分为基于连续介质力学的方法、基于非连续介质力学的方法和连续非连续耦合方法。其中，基于连续介质力学的模拟方法主要包括Finite element method (FEM)、Finite Difference Method (FDM)、Cohesive Zone Methods (CZM)、Peridynamics (PD)、Rock Failure Process Analysis (RFPA)、Smoothed Particle Hydrodynamics (SPH)，基于非连续介质力学的模拟方法主要包括Discrete element method (DEM)、Lattice Element Method (LEM)、Universal Distinct Element Code (UDEC / 3DEC)、Discontinuous Deformation Analysis (DDA)、Numerical Manifold Method (NMM)，连续非连续耦合方法主要有Continuous-Discontinuous Element Method (CDEM)、Finite-Discrete Element Method (FDEM)。在计算效率、计算精度和计算尺度方面，每种方法都有其优势和劣势。由于砂岩主要是由岩石颗粒(如石英砂、长石颗粒等)和颗粒间的胶结物质（如方解石等）组成，基于颗粒粘结模型的DEM方法可以很大程度地这种物理本质，因此本文将重点对砂岩模拟中DEM方法展开研究，尽管其他方法也可能在某些方面具有超过DEM的优势。</p><blockquote><p>离散元粘结模型的发展及不足</p></blockquote><p>颗粒离散元方法(DEM)最早有Cundall于1979年正式提出，随后该模拟方法在模拟颗粒物质方面得到了大量应用。而随着2004年…… and Cundall正式论述提出了基于弹簧的平行粘结模型，DEM在岩石模拟领域的相关论文迅增长。根据颗粒间Bond的作用力计算方式的不同，可以将颗粒粘结模型划分为两类：一类基于spring的模型，一类是基于beam的模型。</p><blockquote><p>论文的整体架构介绍</p></blockquote><hr><p>（15分钟速记练习）</p><hr><hr><blockquote><p>一张还挺好看但后来发现没什么卵用的图。</p></blockquote><p><img src="https://s4.ax1x.com/2021/12/26/TdtfRH.png"></p><p>（2021.12）</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="学术：离散元颗粒粘结模型研究背景"><a href="#学术：离散元颗粒粘结模型研究背景" class="headerlink" title="学术：离散元颗粒粘结模型研究背景"></a>学术：离散元颗粒粘结模型研究背景</h1><blockquote><p>“生活，在任何地方都要不惜代价地参与生活。”————赫拉巴尔</p></blockquote><p>&emsp;&emsp;不知道为什么我会想到这么一句“懒驴上磨屎尿多”，不甚雅观，尤其是用来形容自己，着实有些不妥。不过这句话确实很能贴切地描述我每次准备写论文时的状态，刷手机聚精会神，写代码聚精会神，唯独就是写论文，刚准备开始写，就会想：是不是坐久了，该起来活动活动了……是不是该去上个厕所了……现在几点了，是不是该准备晚饭了……  反正就是一开始干这个事情，就有好多奇奇怪怪的想法阻止我去写论文。Why??? 我也不知道，难道我是在潜意识里排斥写论文吗？有可能是。但我确确实实不排斥写文字，甚至还是喜欢写一些东西的，那难道是我对写论文的认知不正确，把一个很有意思的事情当作了无聊的任务？还是因为知道这是当前最重要的事情，反而却不愿意去做呢？（因为我就经常在重要的考试前不想去复习，比如英语四六级，Deadline越近越不想）人的潜意识真的有点复杂，我自己都有点搞不懂自己的潜意识了。</p><p>&emsp;&emsp;书归正传，这篇博文是我的一个尝试，尝试把论文的一部分拿出来当作一篇博文来写，看看会不会有什么效果，比如：写得快速且愉快。文献引用在下文中全部省略，整体写作思路分为三个部分：</p><ul><li>砂岩的模拟方法，引出离散元粘结模型</li><li>离散元粘结模型的发展及不足</li><li>论文的整体架构介绍</li></ul><hr><blockquote><p>砂岩的模拟方法，引出离散元粘结模型</p></blockquote><p>作为沉积岩的一种，砂岩在自然界中广泛分布，与众多地下空间建设及工业生产过程（隧道建设、sand production等）息息相关。在地下工程建设和生产过程中，由于外力扰动，造成岩石原始赋存应力状态改变，导致砂岩发生大变形、劈裂、破碎以及岩层运动等宏观力学行为，部分力学行为会对工程的安全建设和高效经济的生产造成负面影响。科学准确地认识和模拟砂岩的性质，对提高工业生产的效率意义重大。</p><p>为了提高对砂岩的认识，研究者已经针对砂岩在现场试验、室内试验和理论解析方面开展了一系列研究，为后续的研究奠定了坚实的基础。随着计算机硬件和数值算法的发展，具有可重复性高、可控性强和成本低等优势的数值模拟成为了研究砂岩力学行为的一种重要方法。根据基本原理的不同，砂岩的数值模拟方法可以分为基于连续介质力学的方法、基于非连续介质力学的方法和连续非连续耦合方法。其中，基于连续介质力学的模拟方法主要包括Finite element method (FEM)、Finite Difference Method (FDM)、Cohesive Zone Methods (CZM)、Peridynamics (PD)、Rock Failure Process Analysis (RFPA)、Smoothed Particle Hydrodynamics (SPH)，基于非连续介质力学的模拟方法主要包括Discrete element method (DEM)、Lattice Element Method (LEM)、Universal Distinct Element Code (UDEC / 3DEC)、Discontinuous Deformation Analysis (DDA)、Numerical Manifold Method (NMM)，连续非连续耦合方法主要有Continuous-Discontinuous Element Method (CDEM)、Finite-Discrete Element Method (FDEM)。在计算效率、计算精度和计算尺度方面，每种方法都有其优势和劣势。由于砂岩主要是由岩石颗粒(如石英砂、长石颗粒等)和颗粒间的胶结物质（如方解石等）组成，基于颗粒粘结模型的DEM方法可以很大程度地这种物理本质，因此本文将重点对砂岩模拟中DEM方法展开研究，尽管其他方法也可能在某些方面具有超过DEM的优势。</p><blockquote><p>离散元粘结模型的发展及不足</p></blockquote><p>颗粒离散元方法(DEM)最早由Cundall于1979年正式提出，随后该模拟方法在模拟颗粒物质方面得到了大量应用。而随着2004年…… and Cundall正式论述提出了基于弹簧的平行粘结模型，DEM在岩石模拟领域的相关论文迅增长。根据颗粒间Bond的作用力计算方式的不同，可以将颗粒粘结模型划分为两类：一类是基于beam的模型，一类基于spring的模型。基于beam的颗粒粘结模型数量相对少于基于spring的DEM颗粒粘结模型。根据所应用的beam理论的不同，主要有以下三类模型在文献中被发展了: Elastic Beam Bond Model，Euler-Bernoulli Beam Bond Model and Timoshenko Beam Bond Model。相对于基于spring的模型，这类模型多考虑了颗粒间扭矩的作用（待确认），但其颗粒间的bond键在力学行为上仍表现为弹脆性破坏。谈到基于spring的DEM颗粒粘结模型，不得不提的是由Itasca公司开发的在岩土领域应用广泛的商业软件Particle flow code (PFC)。基于这款软件的基本架构，最先被开发的模型是Contact Bonded particle Model 和 Parallel Bonded particle Model, 后者成为了岩石模拟领域近二十年来最流行的模型，相关文章被引用超过2000次。最早被提出的PBM具有四个不足：(1) 内摩擦角偏低；（2）模拟得到的岩石单轴抗压和抗拉强度比(UCS/TS)偏低；（3）应力-应变曲线为线性；（4）不同围压下的岩石弹性模量一致。造成不足（1）（2）的主要原因被认为是球形颗粒不能提供足够的颗粒互锁作用和颗粒间及bond结构所产生的转动阻力没有得到恰当的计算，因此刚性簇Clump (Potyondy and Cundall, 2004) 和柔性簇Cluster (Cho et al. 2007) 模型被提出，可以有效提高内摩擦角（待查证），但是当根据实际颗粒尺寸设置簇大小时，在3D模拟中只能轻微地提高压拉比 (Ding and Zhang, 2011) ；Grain-based model (Potyondy, 2010) 也被提出用来解决这一问题，但是其复杂的结构造成计算效率的降低，多适用于小尺寸的精确模拟；Schöpfer et al. (2009) 和 Ding and Zhang (2011) 认为这与没有考虑已经存在的裂缝相关，于是提出了在经典BPM中释放Bond键的构想，结果表明这对压拉比和内摩擦角都有一定影响，Potyondy (2011) 和Ding and Zhang (2014) 对强度计算中转动力矩的计算部分添加了动量作用系数β。通过把力矩作用系数降低到很小的值（Potyondy 设置为0，Ding设置为0.1），研究者得到了与Lac du Bonnet一致的压拉比；随后，Flat-joint model也被提出用来解决这一问题。通过虑bond键的局部破坏，它提供了一个较为完美的解决方案，但过于注重细节的模型计算造成其计算效率降低。造成不足（3）（4）的原因主要是其在PBM模型和颗粒间模型中使用了线弹性模型来计算，使用更接近真实的非线性模型可以改善不足（3）且轻微地改善不足（4），例如EDEM中发展的Hertz-Mindlin with Bonding Model。</p><p>除了以上提及的PBM及其不足的改进，也有其他一些优质的颗粒粘结模型被发展了。在Progressive Failure Model (for strong rock)，（add 特性）。Jiang（2016）发展了可以考虑bond thickness的两种BPM (PFC / DS2D) 。在开源软件YADE中，Luc (2013, 2018)开发了同时适合于soft and hard rock模拟的Bonding Model，Aigerim (2019)基于JKR模型发展了适用于loose sand模拟的Bond Model。For modelling the behavior of soft and hard cohesive materials，local constitutive bonding model was developed by Eugenio in 2015。Based on the definition of a non local constitutive model at each particle contact，a non-local bonding model was developed by M.A. Celigueta (2020) using the stress tensor at the bonds。By defining the ratio between the unloading and loading contact stiffness in the normal component, a displacement-softening bond Model based on PFC (2D/3D) was developed by Ma (2018). 这个模型可以(……添加评价)，但是（……添加不足）。To characterize the failure mechanisms of cement bond, a Cohesive Damage-Plasticity Model based on plasticity theory was developed by Nhu (2017),which can produce realistic modelling of soft rock failure.</p><p>以上所提到的模型中，部分已经可以解决传统PBM模型的不足，但是（……add 不足）</p><blockquote><p>论文的整体架构介绍</p></blockquote><p>本文提出了一种可以考虑颗粒间bond键渐进破坏的新型颗粒粘结模型，在PBM的基础上。</p><hr><p>（15分钟速记练习）</p><hr><hr><blockquote><p>一张还挺好看但后来发现没什么卵用的图。</p></blockquote><p><img src="https://s4.ax1x.com/2021/12/26/TdtfRH.png"></p><p>（2021.12）</p>]]></content>
       
       
       <categories>
@@ -49,9 +49,9 @@
       
         <tags>
             
-            <tag> DEM </tag>
-            
             <tag> FastWrite </tag>
+            
+            <tag> DEM </tag>
             
         </tags>
       
@@ -76,9 +76,9 @@
       
         <tags>
             
-            <tag> FastWrite </tag>
-            
             <tag> Daily </tag>
+            
+            <tag> FastWrite </tag>
             
         </tags>
       
@@ -103,9 +103,9 @@
       
         <tags>
             
-            <tag> FastWrite </tag>
-            
             <tag> Daily </tag>
+            
+            <tag> FastWrite </tag>
             
         </tags>
       
