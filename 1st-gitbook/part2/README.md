@@ -1,2 +1,2 @@
-# 第二章
+# 2 Kratos introduction
 
