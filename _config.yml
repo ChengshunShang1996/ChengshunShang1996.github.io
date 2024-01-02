@@ -1,15 +1,15 @@
 # Basic Information 
-title: Yaoyao Liu
-position: Postdoctoral Fellow
-affiliation: Johns Hopkins University
-affiliation_link: https://cs.jhu.edu/
-affiliation_logo: ./assets/img/university-logo-small-horizontal-white-156eae9527.svg
-email: yliu538 (at) jhu.edu
+title: Chengshun Shang
+position: PhD researcher
+affiliation: International Center for Numerical Methods in Engineering (CIMNE), Universitat Politècnica de Catalunya (UPC)
+affiliation_link: https://www.cimne.com/
+affiliation_logo: https://www.cimne.com/cvdata/cntr2/spc2/dtos/mdia/LOGOS/logo-cimne.png
+email: cshang (at) cimne.upc.edu
 
 # Search Engine Optimization (SEO)
-keywords: yaoyao liu, liu yaoyao, yaoyaoliu, liuyaoyao
-canonical: https://www.cs.jhu.edu/~yyliu/
-description: Yaoyao Liu is a postdoctoral fellow at Johns Hopkins University. His research lies in meta-learning, incremental learning, and image generation.
+keywords: chengshun shang, shang chengshun, chengshunshang, shangchengshun
+canonical: https://www.cimne.com/1898/2181/people/directory
+description: Chengshun Shang is a PhD researcher at CIMNE. His research lies in Discrete Element Method (DEM) and sandstone mechanics.
 
 # The option is used to enable the Johns Hopkins template.
 enable_hopkins_logo: true
@@ -19,11 +19,11 @@ enable_last_update: false
 
 # Links
 link_type: icon #text/icon
-google_scholar: https://scholar.google.com/citations?user=Uf9GqRsAAAAJ
-cv_link: https://pages.jh.edu/yliu538/files/Yaoyao_Liu_Curriculum_Vitae.pdf
-github_link: https://github.com/yaoyao-liu/
-linkedin: https://www.linkedin.com/in/liuyaoyao/
-twitter: https://twitter.com/YaoyaoLiu1/
+google_scholar: https://scholar.google.com/citations?user=4b-HX4kAAAAJ&hl=en
+cv_link: https://scholar.google.com/citations?user=4b-HX4kAAAAJ&hl=en
+github_link: https://github.com/ChengshunShang1996/
+linkedin: https://www.linkedin.com/in/chengshun-shang-9b78a322b/
+twitter: -
 
 # Images 
 avatar: https://img.yliu.me/avatar.jpg
